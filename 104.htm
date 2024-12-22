@@ -23,11 +23,38 @@
       #user{
         color:grey;
       }
-      img{
+      img.tea1{
         max-width: 100%;
         height: auto;
         display: block;
         margin: 0 auto;
+      }
+      .post {
+        display:flex;
+        align-items:flex-start;
+        padding:10px;
+        margin-bottom:15px;
+      }
+      .avatar {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .content {
+        flex-grow:1;
+      }
+      .interaction-icons {
+        display:flex;
+        gap:10px;
+      	float:right;
+        margin-top:-40px;
+        align-items:center;
+      }
+      .icon {
+        width:24px;
+        height:24px;
+        cursor:pointer;
+        vertical-align:middle;
       }
     </style>
   </head>
@@ -40,12 +67,36 @@
     <h1>What's your cup of tea?</h1><br>
     <p>What is the most popular drink in the world after water?The answer is tea.It is not only good for our health,but also a key part of many cultures.What does tea mean to you?</p><br>
     <img src="tea1.png" class="tea1" alt="tea1"><br><br><br><br>
-    <div class="user">
-      <img src="" alt="tea2"><h3>Feng Tao</h3><small id="user">16 Feb 2023</small>
+    <div class="post">
+      <img src="FengTao" alt="头像" class="avatar">
+      <div class="content">
+        <div>
+          <strong>Feng</strong><br><span style="color: gray;">16 Feb 2023</span>
+        </div>
+        <p>...</p>
+          <div class="interaction-icons">
+              <img src="like-icon.png" alt="点赞" class="icon"><span style="color:grey">10</span>
+              <img src="comment-icon.png" alt="评论" class="icon"><span style="color:grey">21</span>
+              <img src="favorite-icon.png" alt="收藏" class="icon">
+              <img src="share-icon.png" alt="分享" class="icon">
+          </div>
+      </div>
     </div>
     <hr>
-    <div class="user">
-      <img src="" alt="tea3"><h3>Emma Jones</h3><small id="user">16 Feb 2023</small>
+    <div class="post">
+      <img src="Emma" alt="头像" class="avatar">
+      <div class="content">
+        <div>
+          <strong>Emma Jones</strong><br><span style="color: gray;">16 Feb 2023</span>
+        </div>
+        <p>...</p>
+          <div class="interaction-icons">
+              <img src="like-icon.png" alt="点赞" class="icon"><span style="color:grey">8</span>
+              <img src="comment-icon.png" alt="评论" class="icon"><span style="color:grey">25</span>
+              <img src="favorite-icon.png" alt="收藏" class="icon">
+              <img src="share-icon.png" alt="分享" class="icon">
+          </div>
+      </div>
     </div>
   </body>
 </html>
